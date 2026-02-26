@@ -18,13 +18,13 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         isScrolled || isOpen
-          ? "bg-[#241d1e]/70 backdrop-blur-md shadow-[0_0_40px_rgba(0,0,0,0.2)]"
+          ? "bg-[#707070]/70 backdrop-blur-md shadow-[0_0_40px_rgba(0,0,0,0.2)]"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#home" className="text-3xl font-extrabold text-[#de9e48]">
+        <Link href="#home" className="text-3xl font-extrabold text-[#e3874f]">
           𝕕𝕚𝕛
         </Link>
 
@@ -32,25 +32,25 @@ const Header = () => {
         <nav className="hidden md:flex space-x-10 font-medium text-lg text-white/80">
           <Link
             href="#home"
-            className=" hover:text-[#de9e48] transition-colors duration-200"
+            className=" hover:text-[#e3874f] transition-colors duration-200"
           >
             Home
           </Link>
           <Link
             href="#about"
-            className=" hover:text-[#de9e48] transition-colors duration-200"
+            className=" hover:text-[#e3874f] transition-colors duration-200"
           >
             About
           </Link>
           <Link
             href="#projects"
-            className=" hover:text-[#de9e48] transition-colors duration-200"
+            className=" hover:text-[#e3874f] transition-colors duration-200"
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className=" hover:text-[#de9e48] transition-colors duration-200"
+            className=" hover:text-[#e3874f] transition-colors duration-200"
           >
             Contact
           </Link>
@@ -59,7 +59,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded text-white/80 hover:text-[#de9e48] transition duration-200"
+          className="md:hidden p-2 rounded text-white/80 hover:text-[#e3874f] transition duration-200"
         >
           <HiBars3 size={24} />
         </button>
@@ -71,28 +71,28 @@ const Header = () => {
           <div className="flex flex-col gap-3 text-base font-medium text-white/80">
             <Link
               href="#home"
-              className=" hover:text-[#de9e48] transition-colors duration-200"
+              className=" hover:text-[#e3874f] transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               href="#about"
-              className=" hover:text-[#de9e48] transition-colors duration-200"
+              className=" hover:text-[#e3874f] transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
               href="#projects"
-              className=" hover:text-[#de9e48] transition-colors duration-200"
+              className=" hover:text-[#e3874f] transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </Link>
             <Link
               href="#contact"
-              className=" hover:text-[#de9e48] transition-colors duration-200"
+              className=" hover:text-[#e3874f] transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Contact
