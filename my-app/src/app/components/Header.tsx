@@ -43,6 +43,12 @@ const Header = () => {
             About
           </Link>
           <Link
+            href="#skills"
+            className=" hover:text-[#e3874f] transition-colors duration-200"
+          >
+            Skills
+          </Link>
+          <Link
             href="#projects"
             className=" hover:text-[#e3874f] transition-colors duration-200"
           >
