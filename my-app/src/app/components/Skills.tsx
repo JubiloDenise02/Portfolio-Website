@@ -158,7 +158,7 @@ const Skills = () => {
                 <div className="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-transparent to-transparent group-hover:from-[#ecc28a]/5 group-hover:to-[#ecc28a]/10 transition-all duration-500" />
 
                 <div className="relative z-10">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 font-bold text-white">
                     {category.icon}
                       {category.title}
                   </div>

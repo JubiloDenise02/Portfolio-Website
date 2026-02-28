@@ -1,13 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
 const HomeSection = () => {
   return (
-    <section id="home" className="relative pt-36 pb-24">
-      <div className="mt-12 md:mt-24 max-w-6xl mx-auto px-6">
-        {/*avatar and headline*/}
+    <section id="home" className="relative pt-45 pb-24">
+      <div className="select-none w-full text-center text-white/80 mb-6">
+        <div className="text-2xl md:text-4xl font-bold">
+          <span>Hi! I'm </span>
+          <span className="text-[#ecc28a]">DENISE IRA JUBILO</span>
+        </div>
+  </div>
+
+  <div className="mt-12 md:mt-24 max-w-6xl mx-auto px-6">
+    {/*avatar and headline*/}
         <div className="flex flex-col md:flex-row items-center justify-center max-w-5xl mx-auto">
           {/*greetings*/}
           <div className="relative flex justify-center md:justify-center">
@@ -21,15 +27,6 @@ const HomeSection = () => {
                 className="relative"
                 priority
               />
-
-              <div className="select-none pointer-events-none absolute -top-6 md:-top-14 left-1/2 -translate-x-1/2 w-max max-w-[90vw] text-center px-4 text-white/80">
-                <div className="relative flex items-center justify-end">
-                  <div className="-mt-6 md:-mt-10 shrink-0 text-2xl md:text-4xl font-bold text-center">
-                    <span>Hi! I'm </span>
-                    <span className="text-[#ecc28a]">DENISE IRA JUBILO</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
