@@ -15,10 +15,16 @@ const WorkExperience = () => {
 
   return (
     <section id="about" className="relative py-24">
+      {/* Styled Line Divider */}
+          <div className="relative mt-6 mb-8 w-150 h-[3px] mx-auto">
+            <div className="absolute inset-0 rounded-full bg-linear-to-r from-red-500 via-[#ecc28a] to-orange-400" />
+            <div className="absolute inset-0 rounded-full blur-md opacity-70 bg-linear-to-r from-red-500 via-[#ecc28a] to-orange-400" />
+          </div>
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-16">
           Work <span className="text-[#ecc28a]">Experience</span>
         </h2>
+        
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Card 1 */}
