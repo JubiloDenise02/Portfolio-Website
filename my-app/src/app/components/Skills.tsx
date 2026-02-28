@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Code2, Database, Bug, Brain, ClipboardList, Workflow } from "lucide-react";
-
+import { Code2, Database, Bug, Brain, ClipboardList, Workflow, ChevronDown } from "lucide-react";
 const Skills = () => {
   const [mode, setMode] = useState<"dev" | "qa" | "soft">("dev");
   const [animate, setAnimate] = useState(false);
@@ -18,7 +17,7 @@ const Skills = () => {
   const developerSkills = [
     {
       title: "Programming & Frameworks",
-      icon: <Code2 className="text-[#ecc28a]" size={28} />,
+      icon: <Code2 className="text-[#ecc28a]" size={24} />,
       skills: [
         { name: "Python", level: 90 },
         { name: "Java", level: 75 },
@@ -45,7 +44,7 @@ const Skills = () => {
     },
     {
       title: "Version Control & Collab",
-      icon: <Workflow className="text-[#ecc28a]" size={31} />,
+      icon: <Workflow className="text-[#ecc28a]" size={24} />,
       skills: [
         { name: "Git", level: 88 },
         { name: "GitHub", level: 90 },
@@ -92,8 +91,8 @@ const Skills = () => {
 
   const activeSkills =
     mode === "dev" ? developerSkills : mode === "qa" ? qaSkills : softSkills;
-
-  const toggleCard = (id: string) => {
+  
+    const toggleCard = (id: string) => {
     setOpenCards((prev) =>
       prev.includes(id)
         ? prev.filter((card) => card !== id)
@@ -153,7 +152,7 @@ const Skills = () => {
               <div
                 key={cardId}
                 onClick={() => toggleCard(cardId)}
-                className="group relative cursor-pointer w-full max-w-md rounded-2xl p-8 border border-white/10 bg-gradient-to-br from-[#3f3e45] via-[#37363d] to-[#2f2e34] transition-all duration-300 hover:border-[#ecc28a]/60 hover:shadow-[0_0_40px_rgba(236,194,138,0.35)] hover:-translate-y-1"
+                className="group relative cursor-pointer w-full max-w-md rounded-2xl p-8 min-h-[110px] border border-white/10 bg-gradient-to-br from-[#3f3e45] via-[#37363d] to-[#2f2e34] transition-all duration-300 hover:border-[#ecc28a]/60 hover:shadow-[0_0_40px_rgba(236,194,138,0.35)] hover:-translate-y-1"
               >
                 {/* Glow Layer */}
                 <div className="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-transparent to-transparent group-hover:from-[#ecc28a]/5 group-hover:to-[#ecc28a]/10 transition-all duration-500" />
@@ -173,7 +172,7 @@ const Skills = () => {
                             <span>{skill.level}%</span>
                           </div>
 
-                          <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                          <div className="mb-8 w-full h-2 bg-white/10 rounded-full overflow-hidden">
                             <div
                               className="h-full bg-[#ecc28a] transition-all duration-1000 ease-out"
                               style={{
@@ -187,6 +186,14 @@ const Skills = () => {
                       ))}
                     </div>
                   )}
+                </div>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 pointer-events-none">
+                  <ChevronDown
+                    size={22}
+                    className={`text-[#ecc28a] transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
                 </div>
               </div>
             );

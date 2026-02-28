@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 
 const HomeSection = () => {
   return (
@@ -63,47 +62,6 @@ const HomeSection = () => {
               </span>
             </p>
           </div>
-        </div>
-
-        {/*role and description*/}
-        <div className="mt-20 max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-            <Typewriter
-              words={[
-                "I'm a Software Developer.",
-                "I'm a Full-Stack Developer.",
-                "I'm a Software QA Engineer.",
-              ]}
-              typeSpeed={60}
-              deleteSpeed={50}
-              delaySpeed={800}
-              cursor
-              cursorStyle={"|"}
-              loop={true}
-            />
-          </h2>
-
-          {/* Styled Line Divider */}
-          <div className="relative mt-6 mb-8 w-150 h-[3px] mx-auto">
-            <div className="absolute inset-0 rounded-full bg-linear-to-r from-red-500 via-[#ecc28a] to-orange-400" />
-            <div className="absolute inset-0 rounded-full blur-md opacity-70 bg-linear-to-r from-red-500 via-[#ecc28a] to-orange-400" />
-          </div>
-
-          <p className="text-lg text-white">
-            Currently, I'm seeking a role where I can contribute my skills and
-            grow professionally.
-          </p>
-          <p className="text-lg mt-8 text-white/50 leading-7">
-            Detail-oriented and motivated Computer Engineering graduate with
-            hands-on experience in quality assurance, system development, and
-            software testing through industry internships and academic projects.
-            Skilled in manual and automated testing, web and mobile development,
-            and collaborative Agile environments. Passionate about improving
-            product quality, user experience, and delivering reliable technical
-            solutions. Seeking an entry-level role where I can contribute
-            effectively while continuously developing my technical and
-            professional skills.
-          </p>
         </div>
       </div>
     </section>
