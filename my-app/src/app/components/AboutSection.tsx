@@ -47,7 +47,7 @@ const AboutSection = () => {
           grow professionally.
         </p>
 
-        <p className="mb-10 text-lg mt-8 text-white/50 leading-7">
+        <p className="mb-34 text-lg mt-8 text-white/50 leading-7">
           Detail-oriented and motivated Computer Engineering graduate with
           hands-on experience in quality assurance, system development, and
           software testing through industry internships and academic projects.
